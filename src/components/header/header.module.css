@@ -1,0 +1,62 @@
+*{
+    font-family: sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #292929;
+    box-shadow: 0 0 15px rgba(33,33,33,.3); 
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+.logoContainer{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    height: 80px;
+    margin-right: 10px;
+}
+.siteName{
+    font-Size: 1.5em;
+    font-Weight: bold;
+}
+.userinfo div{
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+}
+.username{
+    margin-Right: 10px;
+}
+.logoutButton{
+    padding: 5px 10px;
+    background-Color: #fff;
+    color: #000;
+    cursor: pointer;
+    height: 8vh;
+    width: 8rem;
+    border-radius: 0.4rem;
+    font-size: 18px;
+    font-weight: bold;
+    /* border: 1px solid #008ac1; */
+}
+.logoutButton:hover{
+    padding: 5px 10px;
+    background-Color: #008ac1;
+    color: #fff;
+    cursor: pointer;
+    height: 8vh;
+    width: 8rem;
+    border-radius: 0.4rem;
+    font-size: 18px;
+    font-weight: bolder;
+    border: 1px solid #008ac1;
+    transition: 0.3ms ease-in;
+    box-shadow: 0 0 10px rgba(33,33,33,.2); 
+}

@@ -1,0 +1,284 @@
+.LandingPage {
+  background: #008ac1;
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column;
+}
+
+.LandingPageMain {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.LandingPageMainContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 9rem 3rem;
+  background: #008ac1;
+}
+.LandingPageMainContainer .blogContainerLanding div{
+  top: 1rem;
+  margin-top: 1rem;
+  z-index: -1;
+  display: flex;
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .LandingPageMainContent {
+    flex-direction: column;
+  }
+}
+
+.LandingPageMainContentInfo {
+  display: grid;
+  align-items: center;
+  grid-gap: 3rem;
+}
+
+.LandingPageMainContentImg {
+  display: grid;
+  align-items: center;
+}
+
+.LandingParagraph {
+  color: #ffffff;
+  width: 80%;
+  line-height: 2rem;
+}
+
+.LandingPageMainContentTitle {
+  color: #ffffff;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+
+.GetStartedButton{
+  background-color: #f7b21f;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  text-align: center;
+  place-items: center;
+  border: none;
+  border: 1px solid #f7b21f;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  width: 15rem;
+  text-decoration: none;
+  font-size: 1.4rem;
+  height: 8vh;
+}
+
+a .GetStartedButton div {
+  padding: 0.7rem 1.5rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.GetStartedButton:hover {
+  background-color: #fff;
+  color: #008ac1;
+  border-color: #fff ;
+}
+
+.LandingPageMainContainer {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.LandingPageWhySection {
+  background-color: #ffffff;
+  padding: 5rem;
+}
+
+.WhySectionContent {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1.5rem;
+}
+
+.LandingPageMainContentImg div img{
+    border-radius: 0.4rem;
+    width: 30rem;
+    height: 70vh;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); 
+}
+
+.DataCenterImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 15px rgba(33,33,33,.2); 
+}
+
+.WhySectionChildContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.WhySectionItem {
+  padding: 1rem;
+  background-color: #e5ebf3;
+  color: #5b5b5b;
+  display: grid;
+  grid-template-rows: max-content;
+  gap: 0.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px rgba(33,33,33,.2); 
+}
+
+.WhySectionCardTitle {
+  font-size: medium;
+  line-height: 2rem;
+  font-weight: bold;
+}
+
+.WhySectionAction {
+  color: #555555;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 1.5rem;
+  gap: 0.6rem;
+  align-items: center;
+  justify-content: end;
+  cursor: pointer;
+}
+
+.PageBannerSection {
+  background-color: #f7b21f;
+  color: #f8f7e5;
+  display: flex;
+  padding: 1rem 3rem;
+}
+
+.LeftPageBannerSection {
+  flex: 6;
+  margin: auto;
+}
+
+.RightPageBannerSection {
+  flex: 1;
+  overflow: hidden;
+  margin: auto;
+}
+
+.BannerParagraph {
+  color: #000000;
+}
+
+.BannerButton {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  padding: 0.5rem 2rem;
+}
+
+.LeftPageBannerInner {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: auto;
+}
+
+.PageBannerLearnMore {
+  text-transform: uppercase;
+  padding: 1rem 2rem;
+  border: 2px solid transparent;
+  background: #fefefe;
+  font-weight: bold;
+  cursor: pointer;
+}
+.SolutionsSection {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 4rem;
+  padding: 1rem 0 3rem 0;
+}
+
+.SolutionsContainer {
+  display: flex;
+}
+
+.SolutionsIcon {
+  flex: 1;
+  padding-top: 1.1rem;
+}
+
+.SolutionsIcon svg {
+  height: 24px;
+}
+
+.SolutionsContent {
+  flex: 5;
+}
+
+@media only screen and (max-width: 900px) {
+  .LandingPageMainContentImg {
+    display: none;
+  }
+
+  .WhySectionContent {
+    grid-template-columns: 1fr;
+  }
+
+  .SolutionsSection {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.GetStartedButton {
+  background-color: #f7b21f;
+  text-transform: uppercase;
+  color: white !important;
+  padding: 0.7rem;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border: 1px solid #f7b21f;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+}
+
+.GetStartedButton:hover {
+  color: #f7b21f;
+  border-color: #fff;
+}
+
+@media only screen and (max-width: 640px) {
+  .LandingPageMainContentImg {
+    display: none;
+  }
+
+  .SolutionsSection {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+  }
+
+  .WhySectionChildContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .LandingPageWhySection {
+    padding: 2rem;
+  }
+}
